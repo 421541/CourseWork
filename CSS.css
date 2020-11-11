@@ -1,3 +1,7 @@
+
+* {
+    box-sizing: border-box;
+}
 body {
     margin: 0;
 }
@@ -29,10 +33,17 @@ body {
     color: purple;
 }
 
-/* Create three equal columns*/
+/* Create three unequal columns that float next to each other */
 .column {
     float: left;
-    width: 33.33%;
+    padding: 10px;
+}
+
+/* Left and right column*/
+.column1 { grid-area: column1;}
+.column2 { grid-area: column2;}
+.column3 { grid-area: column3;}
+    width: 50%
 }
 
 /* Clear floats after the columns */
@@ -48,3 +59,9 @@ instead of next to each other on smaller screens (600px wide or less) */
     .column {
         width: 100%
     }
+}
+footer {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 10px;
+  }
